@@ -87,7 +87,6 @@ select,
 textarea {
   font-family: inherit;
   font-size: 100%;
-  width: 300px;
   padding-block: 0.25rem;
   margin-block: 0.5rem;
 }
@@ -215,7 +214,7 @@ header {
     background-blend-mode: multiply;
     background-position: bottom;
     color: whitesmoke;
-    min-height: 40vh;
+    min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +236,6 @@ header {
 @media screen and (min-width: 425px) {
     .hero {
         padding-inline: 1.5rem;
-        min-height: 60vh;
     }
 
     .hero button {
@@ -273,7 +271,7 @@ header {
 
 .service-card img {
     max-width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
@@ -288,8 +286,6 @@ header {
 
     .service-card img {
         max-width: 50%;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
     }
 }
 
@@ -311,6 +307,7 @@ header {
     display: grid;
     justify-content: center;
     margin-inline: auto;
+    padding-bottom: 0;
 }
 
 .about-us .content {
@@ -373,6 +370,10 @@ header {
     border-left: 2px solid black;
 }
 
+.card-wrapper {
+    grid-column: 1 / -1;
+}
+
 .benefits h2 {
     text-align: center;
     grid-column: 1 / -1;
@@ -382,6 +383,12 @@ header {
     padding-bottom: 0.25rem;
 }
 
+.benefits img {
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
     .benefits .inner-wrapper {
         grid-template-columns: 1fr 1fr;
@@ -389,6 +396,11 @@ header {
     }
     .benefits img {
         grid-row-start: 2;
+        display: block;
+    }
+
+    .card-wrapper {
+        grid-column: 2 / -1;
     }
 }
 
@@ -407,18 +419,57 @@ header {
 }
 
 form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    border-radius: 4px;
+}
+
+
+form textarea {
+    min-height: 6rem;
 }
 
 .form-wrapper {
-    display: grid;
-    grid-area: "form";
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding-block: 2rem;
     padding-inline: 1rem;
     background-color: var(--clr-primary-light);
+}
+
+.cta span {
+    font-size: 1.5rem;
+}
+
+.cta a {
+    font-size: 1rem;
+    text-underline-offset: 0.125em;
+    text-decoration: underline 1px;
+}
+
+.cta a:hover {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 425px) {
+    form input,
+    form textarea {
+        max-width: 360px;
+    }
+
+    form[type='sumbit']{
+        max-width: 500px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -426,5 +477,10 @@ form {
         grid-template-columns: 1fr 1fr;
         max-width: 1024px;
         gap: 3rem;
+    }
+
+    form input,
+    form textarea {
+        max-width: 440px;
     }
 }
