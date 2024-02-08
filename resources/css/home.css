@@ -18,7 +18,7 @@
     padding-bottom: 2rem;
 }
 
-.get-quote {
+button.get-quote {
     background-color: var(--clr-primary);
     color: var(--clr-light);
     border-radius: 0.25rem;
@@ -31,7 +31,7 @@
         padding-inline: 1.5rem;
     }
 
-    .get-quote {
+    button.get-quote {
         font-size: 1.5rem;
         padding: 1rem 1.5rem;
     }
@@ -56,10 +56,9 @@
 .service-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid hsla(240, 3%, 19%, 0.2);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0.25rem 1rem 0.5rem var(--clr-box-shadow);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);;
 }
 
 .service-card img {
@@ -83,7 +82,7 @@
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .services {
         gap: 2rem;
         grid-template-columns: 1fr 1fr;

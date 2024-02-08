@@ -216,7 +216,7 @@ button.get-quote:hover {
     background-color: var(--clr-primary-light);
     padding: 0.5rem;
     border: 1px solid #888;
-    width: 90%;
+    max-width: 95%;
     border-radius: 0.5rem;
 }
 
@@ -265,6 +265,10 @@ button.get-quote:hover {
     align-items: center;
     margin-inline: auto;
     gap: 1.5rem;
+}
+
+#cta {
+    padding-bottom: 0;
 }
 
 .cta .content{
@@ -324,6 +328,10 @@ form textarea {
         grid-template-columns: 1fr 1fr;
         max-width: 1024px;
         gap: 3rem;
+    }
+
+    #cta {
+        padding-bottom: 2rem;
     }
 
     .cta .content{
