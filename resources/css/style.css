@@ -673,7 +673,7 @@ footer h4 {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     right: 0;
     background-color: var(--clr-dark);
     border-radius: 0.25rem;
@@ -698,6 +698,12 @@ footer h4 {
     display: flex;
     text-align: end;
     flex-direction: column;
+}
+
+@media screen and (min-width: 425px) {
+    .dropdown-content {
+        top: 4rem;
+    }
 }
 
 @media screen and (min-width: 800px) {
