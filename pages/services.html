@@ -3,32 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/services.css">
+    <link rel="stylesheet" href="../resources/css/navbar.css">
+    <link rel="stylesheet" href="../resources/css/footer.css">
+    <script src="https://kit.fontawesome.com/f0d997ad90.js" crossorigin="anonymous"></script>
     <title>Services - Teamwork Scaffolding</title>
 </head>
 <body>
     <header>
-        <h1>Services</h1>
+        <div class="logo-title">
+            <img src="./resources/images/logo.jpg" alt="" class="logo">
+            <h3>TEAMWORK SCAFFOLDING</h3>
+        </div>
+        <div class="desktop-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <button class="get-quote">Get a Quote</button>
+        </div>
+        <div class="mobile-menu">
+            <span><i class="fa-solid fa-bars" onclick="toggleDropdown()" class="dropdown-btn"></i></span>
+            <div id="dropdown" class="dropdown-content">
+                <div class="flex-wrapper">
+                    <a href="../index.html">Home</a>
+                    <a href="./services.html">Services</a>
+                    <a href="#">About Us</a>
+                    <a class="get-quote">Get a Quote</a>
+                </div>
+              </div>
+        </div>
     </header>
 
-    <main>        
-        <section>
-            <h2>Service 1</h2>
-            <p>Description of service 1.</p>
+    <main>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <div class="cta">
+                    <div class="content">
+                        <h2>Ready to take your next project to new heights?</h2>
+                        <p>Contact Teamwork Scaffolding today for a free quote and experience the difference our expertise and commitment can make.</p>
+                        <div class="contact"><span class="icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+62211506994">021 150 6994</a></div>
+                        <div class="contact"><span class="icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:teamworkscaffolding@gmail.com?subject=Scaffolding Enquiry">teamworkscaffolding@gmail.com</a></div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="form">
+                            <form class="cta-form" name="cta-form" method="POST" netlify>
+                                <label for="name">Name / Company:<span>*</span></label>
+                                <input type="text" name="name" id="name" required>
+                                <label for="email">Email:<span>*</span></label>
+                                <input type="email" name="email" id="email" required>
+                                <label for="tel">Phone Number:<span>*</span></label>
+                                <input type="tel" name="tel" id="tel">
+                                <label for="enquiry">Enquiry:</label>
+                                <textarea type="text" name="enquiry" id="enquiry"></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="hero">
+            <div>
+                <h1>Our Services</h1>
+            </div>
         </section>
+        <div class="inner-wrapper">
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="../resources/images/scaf-house-2.jpg" alt="Supply & Erect">
+                    <div class="card-content">
+                        <h2>Supply & Erect</h2>
+                        <p>Our versatile tube and coupler systems offer unmatched flexibility, adapting to any project size, shape, and complexity.</p>
+                        <p>Our experienced erection team will safely and efficiently assemble your scaffold, adhering to all relevant WorkSafe NZ regulations.</p>
+                        <p>We offer a variety of scaffold heights, configurations, and access points to meet your specific needs.</p>
+                    </div>
+                </div>
 
-        <section>
-            <h2>Service 2</h2>
-            <p>Description of service 2.</p>
-        </section>
+                <div class="card">
+                    <img src="../resources/images/scaf-tower-1.jpg" alt="Scaffold Design & Engineering">
+                    <div class="card-content">
+                        <h2>Scaffold Design & Engineering</h2>
+                        <p>Need a custom-designed scaffold for a unique project? Our certified engineers are here to help.</p>
+                        <p>We can design complex structures for challenging projects, including roof structures for shrink wrap protection, intricate building shapes, and uneven terrain.</p>
+                        <p>Our designs adhere to the strictest safety standards and ensure optimal functionality for your specific needs.</p>
+                    </div>
+                </div>
 
-        <section>
-            <h2>Service 3</h2>
-            <p>Description of service 3.</p>
+                <div class="card">
+                    <img src="../resources/images/scaf-post-1.jpg" alt="Contract Labour">
+                    <div class="card-content">
+                        <h2>Contract Labour</h2>
+                        <p>Do you have the equipment but need experienced hands to assemble your scaffold? Our team of certified scaffolders is ready to assist.</p>
+                        <p>We ensure all our scaffolders are WorkSafe NZ compliant and possess the necessary skills and knowledge to build safe and stable structures.</p>
+                        <p>Whether you need a full crew for a large project or just a helping hand, we can provide the perfect solution.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../resources/images/scaf-under-bridge-3.jpg" alt="Equipment Hire">
+                    <div class="card-content">
+                        <h2>Equipment Hire</h2>
+                        <p>Don't need a full scaffold setup? We offer a wide range of equipment for rent, allowing you to tackle smaller projects or specific access needs.</p>
+                        <p>Our rental inventory includes scaffold planks, access staircases, propping equipment, mobile towers, and aluminum bridging beams.</p>
+                        <p>We offer flexible rental periods and competitive rates to suit your project timeline and budget.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="cta">
+            <div class="thin-wrapper cta">
+                <div class="content">
+                    <h2>Ready to build your next project with confidence?</h2>
+                    <p>Contact Teamwork Scaffolding today for a free quote and experience the difference our expertise and commitment can make.</p>
+                    <div class="contact"><span><i class="fa-solid fa-phone"></i></span><a href="tel:+62211506994">021 150 6994</a></div>
+                    <div class="contact"><span><i class="fa-solid fa-envelope"></i></span><a href="mailto:teamworkscaffolding@gmail.com?subject=Scaffolding Enquiry">teamworkscaffolding@gmail.com</a></div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="form">
+                        <form class="cta-form" name="cta-form" method="POST" netlify>
+                            <label for="name">Name / Company:<span>*</span></label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="email">Email:<span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="tel">Phone Number:<span>*</span></label>
+                            <input type="tel" name="tel" id="tel">
+                            <label for="enquiry">Enquiry:</label>
+                            <textarea type="text" name="enquiry" id="enquiry"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2022 Teamwork Scaffolding. All rights reserved.</p>
+        <div class="inner-wrapper">
+            <!-- <div class="services-grid">
+                <h3>Supply & Erect</h3>
+                <h3>Scaffold Design</h3>
+                <h3>Contract Labour</h3>
+                <h3>Equipment Hire</h3>
+            </div> 
+            <hr>-->
+            <div class="contact-grid">
+                <div class="contact"><span><i class="fa-solid fa-phone"></i></span><a href="tel:+62211506994">021 150 6994</a></div>
+                <div class="contact"><span><i class="fa-solid fa-envelope"></i></span><a href="mailto:teamworkscaffolding@gmail.com?subject=Scaffolding Enquiry">teamworkscaffolding@gmail.com</a></div>
+                <div class="contact"><i class="fa-solid fa-bullhorn"></i></span><a href="">Request a free quote</a></div>
+            </div>
+        </div>
+        <h4>Website developed by Robbie.kiwi</h4>
     </footer>
+    <script src="../resources/js/get-quote.js"></script>
+    <script src="../resources/js/mobile-dropdown.js"></script>
 </body>
 </html>

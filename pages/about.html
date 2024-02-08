@@ -3,40 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="../resources/css/about.css">
+    <link rel="stylesheet" href="../resources/css/navbar.css">
+    <link rel="stylesheet" href="../resources/css/footer.css">
+    <script src="https://kit.fontawesome.com/f0d997ad90.js" crossorigin="anonymous"></script>
     <title>About Me - Teamwork Scaffolding</title>
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <div class="logo-title">
+            <img src="./resources/images/logo.jpg" alt="" class="logo">
+            <h3>TEAMWORK SCAFFOLDING</h3>
+        </div>
+        <div class="desktop-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <button class="get-quote">Get a Quote</button>
+        </div>
+        <div class="mobile-menu">
+            <span><i class="fa-solid fa-bars" onclick="toggleDropdown()" class="dropdown-btn"></i></span>
+            <div id="dropdown" class="dropdown-content">
+                <div class="flex-wrapper">
+                    <a href="../index.html">Home</a>
+                    <a href="./services.html">Services</a>
+                    <a href="#">About Us</a>
+                    <a class="get-quote">Get a Quote</a>
+                </div>
+              </div>
+        </div>
     </header>
     <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>Welcome to Teamwork Scaffolding! My name is [Your Name] and I am passionate about teamwork and collaboration. I believe that effective teamwork is the key to success in any project or organization.</p>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <div class="cta">
+                    <div class="content">
+                        <h2>Ready to take your next project to new heights?</h2>
+                        <p>Contact Teamwork Scaffolding today for a free quote and experience the difference our expertise and commitment can make.</p>
+                        <div class="contact"><span class="icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+62211506994">021 150 6994</a></div>
+                        <div class="contact"><span class="icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:teamworkscaffolding@gmail.com?subject=Scaffolding Enquiry">teamworkscaffolding@gmail.com</a></div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="form">
+                            <form class="cta-form" name="cta-form" method="POST" netlify>
+                                <label for="name">Name / Company:<span>*</span></label>
+                                <input type="text" name="name" id="name" required>
+                                <label for="email">Email:<span>*</span></label>
+                                <input type="email" name="email" id="email" required>
+                                <label for="tel">Phone Number:<span>*</span></label>
+                                <input type="tel" name="tel" id="tel">
+                                <label for="enquiry">Enquiry:</label>
+                                <textarea type="text" name="enquiry" id="enquiry"></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="hero">
+            <h1>About Us</h1>
         </section>
         <section>
-            <h2>Experience</h2>
-            <p>Over the years, I have worked with various teams and gained valuable experience in project management, communication, and problem-solving. I have successfully led teams to deliver high-quality results within tight deadlines.</p>
+            <div class="inner-wrapper">
+                <h2>Building Trust, One Project at a Time</h2>
+                <p>Welcome to Teamwork Scaffolding, where family values meet industry expertise to elevate your projects to new heights. Founded in 2006, we're not just about scaffolding; we're about building trust, safety, and success for every client, big or small.</p>
+            </div>
         </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Team building and leadership</li>
-                <li>Effective communication</li>
-                <li>Conflict resolution</li>
-                <li>Problem-solving</li>
-                <li>Time management</li>
-            </ul>
+
+        <section class="gallery thin-wrapper">
+            <div class="gallery-item">
+                <img src="../resources/images/scaf-house-4.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="../resources/images/scaf-under-bridge-1.jpg" alt="">
+            </div>
         </section>
+        
         <section>
-            <h2>Get in Touch</h2>
-            <p>If you have any questions or would like to discuss potential collaboration opportunities, feel free to reach out to me. I am always excited to connect with like-minded individuals who share a passion for teamwork.</p>
-            <p>Email: [Your Email]</p>
-            <p>Phone: [Your Phone Number]</p>
+            <div class="inner-wrapper">
+                <h2>The Teamwork Difference</h2>
+                <div class="card-wrapper">
+                    <div class="card"><h3>Family-Owned & Operated</h3> <p>Our close-knit team brings generations of experience and a genuine commitment to your satisfaction.</p></div>
+                    <div class="card"><h3>Safety First</h3> <p>Unwavering dedication to WorkSafe NZ regulations and cutting-edge equipment ensures your project's safety is our top priority.</p></div>
+                    <div class="card"><h3>Local Experts</h3> <p>Serving the Hibiscus Coast/Rodney district, the North Shore, and greater Auckland, we understand the local landscape and regulations.</p></div>
+                    <div class="card"><h3>Uncompromising Quality</h3> <p>We offer exceptional service and high-quality equipment, exceeding expectations at every turn.</p></div>
+                    <div class="card"><h3>Flexibility & Affordability</h3> <p>Whether you need a custom design, contract labor, or equipment rental, we have tailored solutions to fit your budget and project needs.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery thin-wrapper">
+            <div class="gallery-item">
+                <img src="../resources/images/scaf-boat-1.jpg" alt="">
+            </div>
+            <div class="gallery-item">
+                <img src="../resources/images/scaf-house-3.jpg" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div class="inner-wrapper">
+                <h2>More Than Just Scaffolding</h2>
+                <p>Teamwork Scaffolding offers a comprehensive range of services, including:</p>
+                <section>
+                    <h2>Services Offered</h2>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <h3>Supply & Erect</h3>
+                            <p>Versatile tube and coupler systems tackle any access challenge.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Scaffold Design & Engineering</h3>
+                            <p>Certified engineers design complex structures, including roof structures for shrink wrap protection.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Contract Labour</h3>
+                            <p>Our certified scaffolders ensure your project adheres to WorkSafe NZ regulations.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Equipment Hire</h3>
+                            <p>Scaffold planks, access stairs, propping equipment, mobile towers, and aluminum bridging beams are available for rent.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="cta">
+            <div class="thin-wrapper cta">
+                <div class="content">
+                    <h2>Let's Build Together</h2>
+                    <p>Whether you're a seasoned contractor or a DIY enthusiast, we're here to partner with you. Contact Teamwork Scaffolding today for a free quote and experience the difference our family values and expertise can make.</p>
+                    <div class="contact"><span><i class="fa-solid fa-phone"></i></span><a href="tel:+62211506994">021 150 6994</a></div>
+                    <div class="contact"><span><i class="fa-solid fa-envelope"></i></span><a href="mailto:teamworkscaffolding@gmail.com?subject=Scaffolding Enquiry">teamworkscaffolding@gmail.com</a></div>
+                </div>
+                <div class="form-wrapper">
+                    <div class="form">
+                        <form class="cta-form" name="cta-form" method="POST" netlify>
+                            <label for="name">Name / Company:<span>*</span></label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="email">Email:<span>*</span></label>
+                            <input type="email" name="email" id="email" required>
+                            <label for="tel">Phone Number:<span>*</span></label>
+                            <input type="tel" name="tel" id="tel">
+                            <label for="enquiry">Enquiry:</label>
+                            <textarea type="text" name="enquiry" id="enquiry"></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2022 Teamwork Scaffolding. All rights reserved.</p>
+        <div class="inner-wrapper">
+            <!-- <div class="services-grid">
+                <h3>Supply & Erect</h3>
+                <h3>Scaffold Design</h3>
+                <h3>Contract Labour</h3>
+                <h3>Equipment Hire</h3>
+            </div> 
+            <hr>-->
+            <div class="contact-grid">
+                <div class="contact"><span><i class="fa-solid fa-phone"></i></span><a href="tel:+62211506994">021 150 6994</a></div>
+                <div class="contact"><span><i class="fa-solid fa-envelope"></i></span><a href="mailto:teamworkscaffolding@gmail.com?subject=Scaffolding Enquiry">teamworkscaffolding@gmail.com</a></div>
+                <div class="contact"><i class="fa-solid fa-bullhorn"></i></span><a href="">Request a free quote</a></div>
+            </div>
+        </div>
+        <h4>Website developed by Robbie.kiwi</h4>
     </footer>
+    <script src="../resources/js/get-quote.js"></script>
+    <script src="../resources/js/mobile-dropdown.js"></script>
 </body>
 </html>

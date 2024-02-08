@@ -1,0 +1,40 @@
+section {
+    padding-block: 1rem;
+}
+
+.hero {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    background-color: var(--clr-primary-light);
+    text-align: center;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-wrapper .card {
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    margin-inline: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-inline: 1rem;
+}
+
+.gallery-item img {
+    border-radius: 0.25rem;
+}
