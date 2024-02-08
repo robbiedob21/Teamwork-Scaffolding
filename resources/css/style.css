@@ -1,10 +1,9 @@
 :root{
-    --clr-primary-light: hsl(30, 100%, 65%);
+    --clr-primary-light: hsl(30, 100%, 90%);
     --clr-primary: hsl(30, 100%, 50%);
     --clr-primary-dark: hsl(30, 100%, 35%);
     --clr-dark: hsl(240, 3%, 15%);
     --clr-light: hsl(0, 0%, 96%);
-    --clr-bg: hsla(30, 100%, 65%, 0.15);
     --clr-box-shadow: hsla(240, 3%, 19%, 0.05);
 }
 
@@ -29,7 +28,6 @@ html {
 .thin-wrapper {
     margin-inline: auto;
     max-width: 1024px;
-    padding-inline: 1rem;
 }
 
 .grid {
@@ -92,7 +90,7 @@ textarea {
 }
 
 .alt-bg {
-    background-color: var(--clr-bg);
+    background-color: var(--clr-primary-light);
 }
 
 @media screen and (min-width: 425px) {
@@ -103,11 +101,16 @@ textarea {
     h2, h3, h4 {
         line-height: 1.4;
     }
+    
 }
 
 @media screen and (min-width: 768px) {
     h1 {
         font-size: 4rem;
+    }
+
+    .thin-wrapper {
+        padding-inline: 1rem;
     }
 }
 
@@ -123,6 +126,19 @@ header {
     background-color: var(--clr-dark);
     padding: 1rem;
     border-bottom: 2px solid var(--clr-primary-dark);
+}
+
+header h3 {
+    font-size: 1.125rem;
+}
+
+header span {
+    font-size: 1.125rem;
+    color: var(--clr-light);
+}
+
+header span:hover {
+    opacity: 0.8;
 }
 
 .logo-title{
@@ -143,7 +159,35 @@ header {
     display: none;
 }
 
+button.get-quote {
+    background-color: var(--clr-primary);
+    color: var(--clr-);
+    border: 2px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+button.get-quote:hover {
+    border: 2px solid var(--clr-primary-dark);
+}
+
+@media screen and (min-width: 425px) {
+    header h3 {
+        font-size: 1.375rem;
+    }
+    header span {
+        font-size: 1.375rem;
+        color: var(--clr-light);
+    }
+}
+
 @media screen and (min-width: 800px) {
+    header h3 {
+        font-size: 1.5rem;
+    }
+
     .mobile-menu {
         display: none;
     }
@@ -174,20 +218,6 @@ header {
         text-decoration: underline;
         text-underline-offset: 0.25em;
     }
-
-    header button {
-        background-color: var(--clr-primary);
-        color: var(--clr-);
-        border: 2px solid transparent;
-        border-radius: 0.25rem;
-        font-size: 1.25rem;
-        font-weight: bold;
-        padding: 0.5rem 1.5rem;
-    }
-
-    header button:hover {
-        border: 2px solid var(--clr-primary-dark);
-    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -209,7 +239,7 @@ header {
 
 .hero {
     background-color: hsla(0, 0%, 0%, 0.5);
-    background-image: url(./images/scaf-under-bridge-2.jpg);
+    background-image: url(../images/scaf-under-bridge-2.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     background-position: bottom;
@@ -225,7 +255,7 @@ header {
     padding-bottom: 2rem;
 }
 
-.hero button {
+.get-quote {
     background-color: var(--clr-primary);
     color: var(--clr-light);
     border-radius: 0.25rem;
@@ -238,7 +268,7 @@ header {
         padding-inline: 1.5rem;
     }
 
-    .hero button {
+    .get-quote {
         font-size: 1.5rem;
         padding: 1rem 1.5rem;
     }
@@ -313,12 +343,12 @@ header {
 .about-us .content {
     margin-inline: auto;
     max-width: 75ch;
-    padding-block: 1rem;
 }
 
 .about-us img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    border-radius: 0.125rem;
 }
 
 /* TESTIMONIAL */
@@ -367,7 +397,7 @@ header {
     background-color: white;
     border-radius: 0 0.5rem 0.5rem 0;
     height: 100%;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--clr-dark);
 }
 
 .card-wrapper {
@@ -387,6 +417,7 @@ header {
     height: 100%;
     object-fit: cover;
     display: none;
+    border-radius: 0.125rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -414,30 +445,40 @@ header {
 
 .cta {
     display: grid;
+    justify-content: center;
+    align-items: center;
     margin-inline: auto;
-    gap: 3rem;
+    gap: 1.5rem;
+}
+
+.cta .content{
+    padding-inline: 1rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
 form input,
 form textarea {
     border-radius: 4px;
+    max-width: 100%;
 }
 
-
 form textarea {
-    min-height: 6rem;
+    min-height: 8rem;
 }
 
 .form-wrapper {
-    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
     padding-block: 2rem;
     padding-inline: 1rem;
     background-color: var(--clr-primary-light);
+}
+
+.form {
+    flex: 0 1 350px;
 }
 
 .cta span {
@@ -445,6 +486,7 @@ form textarea {
 }
 
 .cta a {
+    color: var(--clr-dark);
     font-size: 1rem;
     text-underline-offset: 0.125em;
     text-decoration: underline 1px;
@@ -461,26 +503,205 @@ form textarea {
     padding-bottom: 1rem;
 }
 
-@media screen and (min-width: 425px) {
-    form input,
-    form textarea {
-        max-width: 360px;
-    }
-
-    form[type='sumbit']{
-        max-width: 500px;
-    }
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .cta {
         grid-template-columns: 1fr 1fr;
         max-width: 1024px;
         gap: 3rem;
     }
 
+    .cta .content{
+        padding-inline: 0rem;
+    }
+
     form input,
     form textarea {
         max-width: 440px;
+    }
+
+    .form-wrapper {
+        border-radius: 0.5rem;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 2px solid var(--clr-primary-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    padding-bottom: 2rem;
+}
+
+footer .contact {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+footer a {
+    color: var(--clr-light);
+    text-decoration: none;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 1rem;
+    gap: 1rem;
+}
+
+.services-grid > * {
+    text-align: center;
+    padding-block: 1rem;
+    padding-inline: 0.25rem;
+    border: 2px solid var(--clr-light);
+    border-radius: 0.5rem;
+    flex: 1 1 200px;
+}
+
+.contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-block: 2rem;
+}
+
+footer h4 {
+    font-size: 0.75rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* POP UP */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup .content {
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    padding: 0;
+}
+
+.popup h2 {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.popup a,
+.popup .icon {
+    font-size: 1rem;
+}
+
+.popup p {
+    display: none;
+}
+
+.popup .contact {
+    padding-bottom: 0;
+}
+
+.popup .form {
+    flex: 0 1 350px;
+}
+
+.popup .form-wrapper {
+    padding: 0;
+    padding-inline: 0.5rem;
+}
+
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--clr-primary-light);
+    padding: 0.5rem;
+    border: 1px solid #888;
+    width: 90%;
+    border-radius: 0.5rem;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--clr-dark);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 425px){
+    .popup h2 {
+        font-size: 1.5rem;
+    }
+    .popup a {
+        font-size: 1rem;
+    }
+    .popup .content {
+        justify-items: left;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .popup p {
+        display: block;
+    }
+    .popup h2 {
+        text-align: left;
+        font-size: 2rem;
+    }
+    .popup-content {
+        padding: 1.5rem;
+    }
+}
+
+/* DROPDOWN */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: var(--clr-dark);
+    border-radius: 0.25rem;
+    border-top: 2px solid var(--clr-dark);
+    border-left: 2px solid var(--clr-primary-dark);
+    border-bottom: 2px solid var(--clr-primary-dark);
+}
+
+.dropdown-content a {
+    font-size: 1.5rem;
+    color: var(--clr-light);
+    text-decoration: none; 
+    padding: 1rem;  
+    flex: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--clr-primary-dark);
+}
+
+.dropdown-content .flex-wrapper {
+    display: flex;
+    text-align: end;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+    .dropdown-content {
+        display: none;
     }
 }
