@@ -27,6 +27,19 @@ img {
     object-fit: cover;
 }
 
+.outer-wrapper {
+    padding-inline: 1rem;
+}
+
+.grid-wrapper {
+    display: grid;
+}
+
+.learn-more {
+    max-width: fit-content;
+    justify-self: center;
+}
+
 .gallery {
     display: grid;
     gap: 1rem;

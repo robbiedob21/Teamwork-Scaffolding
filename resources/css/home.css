@@ -18,22 +18,9 @@
     padding-bottom: 2rem;
 }
 
-button.get-quote {
-    background-color: var(--clr-primary);
-    color: var(--clr-light);
-    border-radius: 0.25rem;
-    font-size: 1.25rem;
-    padding: 0.5rem 1rem;
-}
-
 @media screen and (min-width: 425px) {
     .hero {
         padding-inline: 1.5rem;
-    }
-
-    button.get-quote {
-        font-size: 1.5rem;
-        padding: 1rem 1.5rem;
     }
 
     .hero p {
@@ -46,6 +33,7 @@ button.get-quote {
 .services {
     display: grid;
     gap: 1.5rem;
+    justify-items: center;
 }
 
 .services h2 {
@@ -88,7 +76,8 @@ button.get-quote {
         grid-template-columns: 1fr 1fr;
     }
 
-    .services h2 {
+    .services h2,
+    .learn-more {
         grid-column: 1 / 3;
     }
 }
@@ -98,6 +87,7 @@ button.get-quote {
 .about-us {
     display: grid;
     justify-content: center;
+    gap: 1rem;
     margin-inline: auto;
     padding-bottom: 0;
 }

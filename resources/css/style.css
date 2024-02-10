@@ -86,11 +86,22 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   padding-block: 0.25rem;
+  padding-inline: 0.5rem;
   margin-block: 0.5rem;
 }
 
 .alt-bg {
     background-color: var(--clr-primary-light);
+}
+
+button.get-quote {
+    background-color: var(--clr-primary);
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
 }
 
 @media screen and (min-width: 425px) {
@@ -101,6 +112,10 @@ textarea {
     h2, h3, h4 {
         line-height: 1.4;
     }
+
+    button.get-quote {
+        font-size: 1.5rem;
+    }
     
 }
 
@@ -108,8 +123,17 @@ textarea {
     h1 {
         font-size: 4rem;
     }
+}
 
-    .thin-wrapper {
-        padding-inline: 1rem;
-    }
+.learn-more {
+    background-color: var(--clr-primary);
+    color: black;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.learn-more:hover,
+button.get-quote:hover {
+    background-color: var(--clr-primary-dark);
 }

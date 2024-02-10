@@ -8,34 +8,36 @@
     <link rel="stylesheet" href="../resources/css/navbar.css">
     <link rel="stylesheet" href="../resources/css/footer.css">
     <script src="https://kit.fontawesome.com/f0d997ad90.js" crossorigin="anonymous"></script>
-    <title>About Me - Teamwork Scaffolding</title>
+    <title>About Us - Teamwork Scaffolding</title>
 </head>
 <body>
     <header>
-        <div class="logo-title">
-            <img src="./resources/images/logo.jpg" alt="" class="logo">
-            <h3>TEAMWORK SCAFFOLDING</h3>
-        </div>
-        <div class="desktop-menu">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-            <button class="get-quote">Get a Quote</button>
-        </div>
-        <div class="mobile-menu">
-            <span><i class="fa-solid fa-bars" onclick="toggleDropdown()" class="dropdown-btn"></i></span>
-            <div id="dropdown" class="dropdown-content">
-                <div class="flex-wrapper">
-                    <a href="../index.html">Home</a>
-                    <a href="./services.html">Services</a>
-                    <a href="#">About Us</a>
-                    <a class="get-quote">Get a Quote</a>
+        <div class="inner-wrapper navigation">
+            <div class="logo-title">
+                <img src="../resources/images/logo.jpg" alt="" class="logo">
+                <h3>TEAMWORK SCAFFOLDING</h3>
+            </div>
+            <div class="desktop-menu">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+                <button class="get-quote">Get a Quote</button>
+            </div>
+            <div class="mobile-menu">
+                <span><i class="fa-solid fa-bars" onclick="toggleDropdown()" class="dropdown-btn"></i></span>
+                <div id="dropdown" class="dropdown-content">
+                    <div class="flex-wrapper">
+                        <a href="../index.html">Home</a>
+                        <a href="./services.html">Services</a>
+                        <a href="#">About Us</a>
+                        <a class="get-quote">Get a Quote</a>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
     </header>
     <main>
@@ -70,8 +72,8 @@
         <section class="hero">
             <h1>About Us</h1>
         </section>
-        <section>
-            <div class="inner-wrapper">
+        <section class="outer-wrapper">
+            <div class="thin-wrapper">
                 <h2>Building Trust, One Project at a Time</h2>
                 <p>Welcome to Teamwork Scaffolding, where family values meet industry expertise to elevate your projects to new heights. Founded in 2006, we're not just about scaffolding; we're about building trust, safety, and success for every client, big or small.</p>
             </div>
@@ -86,15 +88,30 @@
             </div>
         </section>
         
-        <section>
-            <div class="inner-wrapper">
+        <section class="outer-wrapper">
+            <div class="thin-wrapper">
                 <h2>The Teamwork Difference</h2>
                 <div class="card-wrapper">
-                    <div class="card"><h3>Family-Owned & Operated</h3> <p>Our close-knit team brings generations of experience and a genuine commitment to your satisfaction.</p></div>
-                    <div class="card"><h3>Safety First</h3> <p>Unwavering dedication to WorkSafe NZ regulations and cutting-edge equipment ensures your project's safety is our top priority.</p></div>
-                    <div class="card"><h3>Local Experts</h3> <p>Serving the Hibiscus Coast/Rodney district, the North Shore, and greater Auckland, we understand the local landscape and regulations.</p></div>
-                    <div class="card"><h3>Uncompromising Quality</h3> <p>We offer exceptional service and high-quality equipment, exceeding expectations at every turn.</p></div>
-                    <div class="card"><h3>Flexibility & Affordability</h3> <p>Whether you need a custom design, contract labor, or equipment rental, we have tailored solutions to fit your budget and project needs.</p></div>
+                    <div class="card">
+                        <h3>Family-Owned & Operated</h3>
+                        <p>Our close-knit team brings generations of experience and a genuine commitment to your satisfaction.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Safety First</h3>
+                        <p>We are dedicated to safety regulations and cutting-edge equipment ensures your project's safety is our top priority.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Local Experts</h3>
+                        <p>Serving the Hibiscus Coast/Rodney district, the North Shore, and greater Auckland, we understand the local landscape and regulations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Uncompromising Quality</h3>
+                        <p>We offer exceptional service and high-quality equipment, exceeding expectations at every turn.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Flexibility & Affordability</h3>
+                        <p>Whether you need a custom design, contract labor, or equipment rental, we have tailored solutions to fit your budget and project needs.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -108,15 +125,14 @@
             </div>
         </section>
 
-        <section>
-            <div class="inner-wrapper">
-                <h2>More Than Just Scaffolding</h2>
-                <p>Teamwork Scaffolding offers a comprehensive range of services, including:</p>
+        <section class="outer-wrapper">
+            <div class="thin-wrapper grid-wrapper">
+                <h2>We offer a comprehensive range of services</h2>
                 <section>
                     <div class="card-wrapper">
                         <div class="card">
                             <h3>Supply & Erect</h3>
-                            <p>Versatile tube and coupler systems tackle any access challenge.</p>
+                            <p>Our versatile tube and coupler systems tackle any access challenge.</p>
                         </div>
                         <div class="card">
                             <h3>Scaffold Design & Engineering</h3>
@@ -132,8 +148,9 @@
                         </div>
                     </div>
                 </section>
+                <a class="learn-more" href="./services.html">Learn more about our services</a>
             </div>
-        </section>
+        </section class="outer-wrapper">
         <section id="cta">
             <div class="thin-wrapper cta">
                 <div class="content">
@@ -145,12 +162,12 @@
                 <div class="form-wrapper">
                     <div class="form">
                         <form class="cta-form" name="cta-form" method="POST" netlify>
-                            <label for="name">Name / Company:<span>*</span></label>
+                            <label for="name">Name / Company:<span aria-label="required">*</span></label>
                             <input type="text" name="name" id="name" required>
-                            <label for="email">Email:<span>*</span></label>
+                            <label for="email">Email:<span aria-label="required">*</span></label>
                             <input type="email" name="email" id="email" required>
-                            <label for="tel">Phone Number:<span>*</span></label>
-                            <input type="tel" name="tel" id="tel">
+                            <label for="tel">Phone Number:<span aria-label="required">*</span></label>
+                            <input type="tel" name="tel" id="tel" required>
                             <label for="enquiry">Enquiry:</label>
                             <textarea type="text" name="enquiry" id="enquiry"></textarea>
                             <input type="submit" value="Submit">
