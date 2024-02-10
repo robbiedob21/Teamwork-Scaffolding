@@ -54,14 +54,22 @@
                     <div class="form-wrapper">
                         <div class="form">
                             <form class="cta-form" name="cta-form" method="POST" netlify>
-                                <label for="name">Name / Company:<span>*</span></label>
-                                <input type="text" name="name" id="name" required>
-                                <label for="email">Email:<span>*</span></label>
-                                <input type="email" name="email" id="email" required>
-                                <label for="tel">Phone Number:<span>*</span></label>
-                                <input type="tel" name="tel" id="tel">
-                                <label for="enquiry">Enquiry:</label>
-                                <textarea type="text" name="enquiry" id="enquiry"></textarea>
+                                <label for="name">
+                                    Name / Company <span aria-label="required">*</span>
+                                </label>
+                                <input type="text" name="name" id="name" maxlength="50" placeholder="John" autocomplete="given-name" required>
+                                <label for="email">
+                                    Email <span aria-label="required">*</span>
+                                </label>
+                                <input type="email" name="email" id="email" maxlength="50" placeholder="John@email.com" autocomplete="email" required>
+                                <label for="tel">
+                                    Phone Number <span aria-label="required">*</span>
+                                </label>
+                                <input type="tel" name="tel" id="tel" max-length="20" placeholder="02123456789" autocomplete="tel-local">
+                                <label for="enquiry">
+                                    What can we help you with?
+                                </label>
+                                <textarea type="text" name="enquiry" id="enquiry" placeholder="I would like..."></textarea>
                                 <input type="submit" value="Submit">
                             </form>
                         </div>
@@ -162,14 +170,22 @@
                 <div class="form-wrapper">
                     <div class="form">
                         <form class="cta-form" name="cta-form" method="POST" netlify>
-                            <label for="name">Name / Company:<span aria-label="required">*</span></label>
-                            <input type="text" name="name" id="name" required>
-                            <label for="email">Email:<span aria-label="required">*</span></label>
-                            <input type="email" name="email" id="email" required>
-                            <label for="tel">Phone Number:<span aria-label="required">*</span></label>
-                            <input type="tel" name="tel" id="tel" required>
-                            <label for="enquiry">Enquiry:</label>
-                            <textarea type="text" name="enquiry" id="enquiry"></textarea>
+                            <label for="name">
+                                Name / Company <span aria-label="required">*</span>
+                            </label>
+                            <input type="text" name="name" id="name" maxlength="50" placeholder="John" autocomplete="given-name" required>
+                            <label for="email">
+                                Email <span aria-label="required">*</span>
+                            </label>
+                            <input type="email" name="email" id="email" maxlength="50" placeholder="John@email.com" autocomplete="email" required>
+                            <label for="tel">
+                                Phone Number <span aria-label="required">*</span>
+                            </label>
+                            <input type="tel" name="tel" id="tel" max-length="20" placeholder="02123456789" autocomplete="tel-local">
+                            <label for="enquiry">
+                                What can we help you with?
+                            </label>
+                            <textarea type="text" name="enquiry" id="enquiry" placeholder="I would like..."></textarea>
                             <input type="submit" value="Submit">
                         </form>
                     </div>
