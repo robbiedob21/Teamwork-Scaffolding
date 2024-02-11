@@ -104,6 +104,19 @@ button.get-quote {
     padding: 0.5rem 1rem;
 }
 
+.learn-more {
+    background-color: var(--clr-primary);
+    color: black;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.learn-more:hover,
+button.get-quote:hover {
+    background-color: var(--clr-primary-dark);
+}
+
 @media screen and (min-width: 425px) {
     h1 {
         font-size: 3rem;
@@ -123,17 +136,4 @@ button.get-quote {
     h1 {
         font-size: 4rem;
     }
-}
-
-.learn-more {
-    background-color: var(--clr-primary);
-    color: black;
-    border-radius: 0.25rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-}
-
-.learn-more:hover,
-button.get-quote:hover {
-    background-color: var(--clr-primary-dark);
 }

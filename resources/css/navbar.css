@@ -24,6 +24,11 @@ header span {
     color: var(--clr-light);
 }
 
+header a {
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
 header span:hover {
     opacity: 0.8;
 }
@@ -73,6 +78,10 @@ header span:hover {
         justify-content: center;
         align-items: center;
         gap: 1.5rem;
+    }
+
+    header .get-quote {
+        font-size: 1.25rem;
     }
     
     ul {
@@ -268,6 +277,7 @@ header span:hover {
 .cta .content{
     display: grid;
     gap: 0.5rem;
+    padding-inline: 1rem;
 }
 
 form {
@@ -278,6 +288,11 @@ form input,
 form textarea {
     border-radius: 4px;
     max-width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder{
+    opacity: 0.5;
 }
 
 form textarea {
@@ -323,6 +338,7 @@ form textarea {
         grid-template-columns: 1fr 1fr;
         max-width: 1024px;
         gap: 3rem;
+        padding-inline: 1rem;
     }
 
     #cta {

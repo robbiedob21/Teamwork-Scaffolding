@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to Teamwork Scaffolding! We provide safe and reliable access solutions for every project. Elevate your project with our expertise and commitment. Contact us today for a free quote.">
     <link rel="stylesheet" href="../resources/css/style.css">
     <link rel="stylesheet" href="../resources/css/about.css">
     <link rel="stylesheet" href="../resources/css/navbar.css">
@@ -14,8 +16,8 @@
     <header>
         <div class="inner-wrapper navigation">
             <div class="logo-title">
-                <img src="../resources/images/logo.jpg" alt="" class="logo">
-                <h3>TEAMWORK SCAFFOLDING</h3>
+                <a href="../index.html"><img src="../resources/images/logo.webp" alt="Logo" class="logo"></a>
+                <h3><a href="../index.html">TEAMWORK SCAFFOLDING</a></h3>
             </div>
             <div class="desktop-menu">
                 <nav>
@@ -65,7 +67,7 @@
                                 <label for="tel">
                                     Phone Number <span aria-label="required">*</span>
                                 </label>
-                                <input type="tel" name="tel" id="tel" max-length="20" placeholder="02123456789" autocomplete="tel-local">
+                                <input type="tel" name="tel" id="tel" max-length="20" placeholder="02123456789" autocomplete="tel">
                                 <label for="enquiry">
                                     What can we help you with?
                                 </label>
@@ -87,17 +89,17 @@
             </div>
         </section>
 
-        <section class="gallery thin-wrapper">
+        <section class="gallery thin-wrapper no-padding-top">
             <div class="gallery-item">
-                <img src="../resources/images/scaf-house-4.jpg" alt="">
+                <img src="../resources/images/scaf-house-4.webp" alt="">
             </div>
             <div class="gallery-item">
-                <img src="../resources/images/scaf-under-bridge-1.jpg" alt="">
+                <img src="../resources/images/scaf-under-bridge-1.webp" alt="">
             </div>
         </section>
         
-        <section class="outer-wrapper">
-            <div class="thin-wrapper">
+        <section class="outer-wrapper alt-bg">
+            <div class="thin-wrapper grid-wrapper">
                 <h2>The Teamwork Difference</h2>
                 <div class="card-wrapper">
                     <div class="card">
@@ -121,41 +123,40 @@
                         <p>Whether you need a custom design, contract labor, or equipment rental, we have tailored solutions to fit your budget and project needs.</p>
                     </div>
                 </div>
+                <a class="get-quote" role="button">Get a free quote</a>
             </div>
         </section>
 
         <section class="gallery thin-wrapper">
             <div class="gallery-item">
-                <img src="../resources/images/scaf-boat-1.jpg" alt="">
+                <img src="../resources/images/scaf-boat-1.webp" alt="">
             </div>
             <div class="gallery-item">
-                <img src="../resources/images/scaf-house-3.jpg" alt="">
+                <img src="../resources/images/scaf-house-3.webp" alt="">
             </div>
         </section>
 
-        <section class="outer-wrapper">
+        <section class="outer-wrapper alt-bg">
             <div class="thin-wrapper grid-wrapper">
                 <h2>We offer a comprehensive range of services</h2>
-                <section>
-                    <div class="card-wrapper">
-                        <div class="card">
-                            <h3>Supply & Erect</h3>
-                            <p>Our versatile tube and coupler systems tackle any access challenge.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Scaffold Design & Engineering</h3>
-                            <p>Certified engineers design complex structures, including roof structures for shrink wrap protection.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Contract Labour</h3>
-                            <p>Our certified scaffolders ensure your project adheres to WorkSafe NZ regulations.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Equipment Hire</h3>
-                            <p>Scaffold planks, access stairs, propping equipment, mobile towers, and aluminum bridging beams are available for rent.</p>
-                        </div>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <h3>Supply & Erect</h3>
+                        <p>Our versatile tube and coupler systems tackle any access challenge.</p>
                     </div>
-                </section>
+                    <div class="card">
+                        <h3>Scaffold Design & Engineering</h3>
+                        <p>Certified engineers design complex structures, including roof structures for shrink wrap protection.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Contract Labour</h3>
+                        <p>Our certified scaffolders ensure your project adheres to WorkSafe NZ regulations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Equipment Hire</h3>
+                        <p>Scaffold planks, access stairs, propping equipment, mobile towers, and aluminum bridging beams are available for rent.</p>
+                    </div>
+                </div>
                 <a class="learn-more" href="./services.html">Learn more about our services</a>
             </div>
         </section class="outer-wrapper">
@@ -181,7 +182,7 @@
                             <label for="tel">
                                 Phone Number <span aria-label="required">*</span>
                             </label>
-                            <input type="tel" name="tel" id="tel" max-length="20" placeholder="02123456789" autocomplete="tel-local">
+                            <input type="tel" name="tel" id="tel" max-length="20" placeholder="02123456789" autocomplete="tel">
                             <label for="enquiry">
                                 What can we help you with?
                             </label>
@@ -208,7 +209,7 @@
                 <div class="contact"><i class="fa-solid fa-bullhorn"></i></span><a class="get-quote">Request a free quote</a></div>
             </div>
         </div>
-        <h4>Website developed by Robbie.kiwi</h4>
+        <p id="attribution">Website developed by Robbie.kiwi</p>
     </footer>
     <script src="../resources/js/get-quote.js"></script>
     <script src="../resources/js/mobile-dropdown.js"></script>
