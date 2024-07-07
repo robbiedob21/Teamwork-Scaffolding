@@ -1,5 +1,7 @@
 main {
     padding: 1rem;
+    margin-inline: auto;
+    max-width: 1440px;
 }
 
 main ul {
